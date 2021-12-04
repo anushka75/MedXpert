@@ -1,0 +1,6 @@
+<form method="post" enctype="multipart/form-data" action="covid">
+   {% csrf_token %}
+   <input type="file" name="imageFile" />
+   <input type="submit" name="submit" value="Upload" />
+   <h2>{{predictions}}</h2>
+</form>
